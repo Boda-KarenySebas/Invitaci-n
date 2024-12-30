@@ -32,7 +32,7 @@
             position: relative;
         }
 
-        /* Fondo blanco translúcido */
+       /* Fondo negro translúcido */
         body::before {
             content: '';
             position: absolute;
@@ -40,22 +40,23 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Fondo blanco translúcido */
+            min-height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */
             z-index: 0;
         }
 
         .container {
             position: relative;
-            z-index: 1; /* Asegura que el contenido esté encima del fondo */
+            z-index: 1;
             padding: 20px;
-            width: 90%; /* Ocupa el 90% del ancho de la pantalla */
-            max-width: 600px; /* Limita el tamaño máximo del contenedor */
+            width: 90%;
+            max-width: 600px;
             box-sizing: border-box;
             animation: fadeIn 1.5s ease-in-out;
         }
 
         h1 {
-            font-size: 2.5rem; /* Tamaño inicial de fuente */
+            font-size: 2.5rem;
             color: #ffffff;
             margin: 0;
         }
@@ -72,15 +73,15 @@
         a {
             text-decoration: none;
             color: white;
-            background-color: #a67347; /* Fondo cálido */
+            background-color: #a67347;
             padding: 10px 20px;
             border-radius: 5px;
-            font-size: 1rem; /* Fuente adaptativa */
+            font-size: 1rem;
             transition: background-color 0.3s ease-in-out;
         }
 
         a:hover {
-            background-color: #86563b; /* Fondo más oscuro al pasar el mouse */
+            background-color: #86563b;
         }
 
         @keyframes fadeIn {
@@ -95,13 +96,13 @@
         /* Responsive design for smaller screens */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2rem; /* Reduce tamaño para pantallas pequeñas */
+                font-size: 2rem;
             }
             p {
                 font-size: 1rem;
             }
             a {
-                font-size: 0.9rem; /* Fuente más pequeña */
+                font-size: 0.9rem;
             }
         }
 
@@ -113,7 +114,7 @@
                 font-size: 0.9rem;
             }
             .container {
-                padding: 10px; /* Reduce el padding para pantallas muy pequeñas */
+                padding: 10px;
             }
             a {
                 padding: 8px 16px;
@@ -124,7 +125,7 @@
 </head>
 <body>
     <div class="container">
-       <h1><br><br><br><br><br><br><br><br><br><br>¡Nos casamos!</h1>
+        <h1><br><br><br><br><br><br><br><br><br><br>¡Nos casamos!</h1>
         <p>Karen & Sebas</p>
         <p>01.03.2025</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <div class="button">
